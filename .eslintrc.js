@@ -18,9 +18,9 @@ module.exports = {
         "indent": [ // 1 indentation level = 4 spaces
             "error",
             4,
-			{ "FunctionDeclaration": {"body": 1, "parameters": "first"}, // body increases one indentation level, arguments align to the first
-			  "FunctionExpression": {"body": 1, "parameters": "first"}, // body increases one indentation level, arguments align to the first
-			  "CallExpression": {"arguments": "first"}, // arguments align to the first
+			{ "FunctionDeclaration": {"body": 1, "parameters": 1}, // body & arguments increase one indentation level
+			  "FunctionExpression": {"body": 1, "parameters": 1}, // body & arguments increase one indentation level
+			  "CallExpression": {"arguments": "off"}, // no checking of call expression
 			  "flatTernaryExpressions": false, // increase indentation level when line break in the middle of ternary expression
 			  "outerIIFEBody": 0}
         ],
@@ -69,7 +69,7 @@ module.exports = {
 			"error",
 			"before"
 		],
-				"multiline-ternary": [ // either write ternary expressions in one line or all spans multiple lines
+		"multiline-ternary": [ // either write ternary expressions in one line or all spans multiple lines
 			"error",
 			"always-multiline"
 		],		
