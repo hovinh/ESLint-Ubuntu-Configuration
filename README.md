@@ -65,7 +65,7 @@ Processed 128 files in total.
     ```console
     # rm $OUTPUT_FILE
     ```
-    Run **init.sh**, check if the file ``test/output.txt`` contains the intended output, replace ``expected_output.txt`` with its content, then uncomment *line 38* again.
+    Run **init.sh**, check if the file ``test/output.txt`` contains the intended output, replace ``expected_output.txt`` with its content, then uncomment *line 38* again and delete ``test/output.txt``.
 
     3) Run **init.sh**, we expected output to look like this:
     ```console
